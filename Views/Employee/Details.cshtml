@@ -1,0 +1,23 @@
+﻿@model EmployeeManagement.Models.UpdateEmployeeViewModel;
+
+<div class="row m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Model?.Name</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <h4>Studnet ID : @Model?.Id</h4>
+                <h4>Branch : @Model?.Email</h4>
+                <h4>Section : @Model?.DateOfBirth</h4>
+                <h4>Gender : @Model?.Department</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Employee" asp-action="Index" class="btn btn-primary">Home</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-controller="Employee">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
